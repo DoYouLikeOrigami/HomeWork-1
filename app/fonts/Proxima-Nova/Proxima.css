@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ProximaNovaCond';
+    src: url('firasans-book.eot');
+    src: url('firasans-book.eot?#iefix') format('embedded-opentype'),
+         url('firasans-book.woff') format('woff'),
+         url('firasans-book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

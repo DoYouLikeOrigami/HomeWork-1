@@ -1,0 +1,35 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-course {
+    width: 26px;
+    height: 32px;
+    background-position: -5px -5px;
+}
+
+.sprite-lock {
+    width: 20px;
+    height: 32px;
+    background-position: -41px -5px;
+}
+
+.sprite-study {
+    width: 42px;
+    height: 23px;
+    background-position: -71px -5px;
+}
+
+.sprite-unlock {
+    width: 20px;
+    height: 32px;
+    background-position: -123px -5px;
+}
+
+.sprite-work {
+    width: 36px;
+    height: 34px;
+    background-position: -153px -5px;
+}
