@@ -1,0 +1,134 @@
+html {
+	box-sizing: border-box;
+} 
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.my-works-block {
+	min-height: 840px;
+}
+
+	.my-works-block .info-content {
+		padding: 27px 20px;	
+	}
+
+		.work-example {
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 24px;
+			margin-bottom: 15px;
+			width: 185px;
+			min-height: 225px;
+		}
+
+			.work-example:nth-of-type(3n) {
+				margin-right: 0;
+			}
+
+			.work-example-image-wrapper {
+				display: inline-block;
+				width: 100%;
+				height: 128px;
+				border: 2px solid rgb(59, 168, 192);
+				border-radius: 5px;
+				overflow: hidden;
+			}
+
+				.work-example-image {
+					width: 100%;
+				}
+
+			.work-example-name {
+				position: absolute;
+				width: 185px;
+				height: 128px;
+				margin-top: -2px;
+				margin-left: -2px;
+				border-radius: 5px;
+				background: rgba(1, 108, 164, 0.749);
+				z-index: 2;
+				text-align: center;
+				display: none;
+				transition: 0.5s;
+			}
+
+				.work-example-name-text {
+					display: inline-block;
+					position: relative;
+					top: 50%;
+					transform: translateY(-50%);
+					padding: 0 2px;
+					border-radius: 5px;
+					border: 2px solid rgb(239, 243, 247);
+					font-size: 12px;
+					color: rgb(239, 243, 247);
+
+				}
+
+			.work-example-image-wrapper:hover .work-example-name {
+				display: block;
+			}
+
+
+			.work-example-adress {
+				display: inline-block;
+				width: 100%;
+				padding: 5px 0px;
+				text-align: center;
+				font-size: 13px;
+				color: rgb(59, 168, 192);
+				font-style: italic;
+			}
+
+			.work-example-comment {
+				display: inline-block;
+				width: 100%;
+				padding: 5px;
+				font-size: 15px;
+				color: rgb(74, 84, 93);
+				text-align: center;
+			}
+
+		.work-new {
+			display: inline-block;
+			width: 100%;
+			height: 128px;
+			background: rgba(236, 251, 255, 0.639);
+			border: 1px dashed rgb(59, 168, 192);
+			border-radius: 5px;
+			text-align: center;
+			cursor: pointer;
+		}
+
+			.work-new-content {
+				display: inline-block;
+				text-align: center;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				cursor: pointer;
+			}
+
+			.work-new-img {
+				display: inline-block;
+				margin-bottom: 10px;
+			}
+
+			.work-new-text {
+				display: inline-block;
+				width: 100%;
+				font-size: 13px;
+				color: rgb(59, 168, 192);
+			}
+
+			.work-new-file {
+				position: absolute;
+				top: 0;
+				left: -9999px;
+			}
+
+
+
+				
