@@ -335,6 +335,7 @@ body {
 
 			.info-content {
 				display: block;
+				position: relative;
 				padding: 17px 55px;
 			}
 

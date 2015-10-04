@@ -32,6 +32,8 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
 
 	<!-- Modernizer -->
 	<script src="bower/modernizer/modernizr.js">
@@ -80,14 +82,14 @@
 			<div class="main-wrapper">
 				<aside class="main-menu">
 					<ul class="nav">
-						<li class="nav-item active">
-							<a class="nav-link">
+						<li class="nav-item">
+							<a href="index.html" 
+								class="nav-link">
 								Обо мне
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="works-page.html" 
-								class="nav-link">
+							<a href="works-page.html" class="nav-link">
 								Мои работы 
 							</a>
 						</li>
@@ -96,8 +98,8 @@
 								Мой блог 
 							</a>
 						</li>
-						<li class="nav-item">
-							<a href="contact.html" class="nav-link">
+						<li class="nav-item active">
+							<a class="nav-link">
 								Связаться со мной
 							</a>
 						</li>
@@ -124,126 +126,63 @@
 			
 				<div class="info-wrapper">
 
-					<article class="info-block">
+					<article class="info-block 
+						contact-block">
 						<header class="info-block-head">
-							<h3 class="info-block-name">Основная информация</h3>
+							<h3 class="info-block-name">
+								У вас интересный проект? Напишите мне
+							</h3>
 						</header>
 						<div class="info-content">
-							<div class="avatar">
-								<img src="img/Avatar.jpg" class="avatar-img" 
-								alt="Avatar">
-							</div>
-							<ul class="info-about-me">
-								<li class="info-fact">
-									<span class="info-bold">Меня зовут:</span>
-									<span 
-									class="fact-info-wrapper-180">
-									Немцев Антон Сергеевич
+							
+							<form class="contact-form">
+
+								<label class="contact-label half-width">
+									<span class="contact-label-header">
+										Имя
 									</span>
-								</li>
-								<li class="info-fact">
-									<span class="info-bold">Мой возраст:</span>
-									<span
-									class="fact-info-wrapper-180">
-									19 лет</span>
-								</li>
-								<li class="info-fact">
-									<span class="info-bold">Мой город:</span>
-									<span 
-									class="fact-info-wrapper-180">
-									Санкт-Петербург, Россия
+									<input type="text" placeholder="Как к Вам обращаться" class="contact-input">
+								</label>
+
+								<label class="contact-label half-width float-right">
+									<span class="contact-label-header">
+										Email
 									</span>
-								</li>
-								<li class="info-fact">
-									<span class="info-bold">Моя специалицация:</span>
-									<span 
-									class="fact-info-wrapper-175">
-									FRONTEND разработчик
+									<input type="text" placeholder="Куда мне писать" class="contact-input float-right">
+								</label>
+
+								<label class="contact-label full-width">
+									<span class="contact-label-header">
+										Сообщение
 									</span>
-								</li>
-								<li class="info-fact">
-									<span class="info-bold">Ключевые навыки:</span>
-									<span
-									class="fact-info-wrapper-175">
-										<span class="my-skill">
-											html
-										</span>
-										<span class="my-skill">
-											css
-										</span>
-										<span class="my-skill">
-											javascript
-										</span>
-										<span class="my-skill">
-											git
-										</span>
+									<input type="textarea" placeholder="Кратко в чем суть" class="contact-input input-large">
+								</label>
+
+								<label class="contact-label full-width">
+									<span class="contact-label-header">
+										Введите код, указаный на картинке
 									</span>
-								</li>
-							</ul>
+									<div class="captcha-wrapper">
+										<img src="img/code.jpg" class="captcha" alt="captcha">
+									</div>
+									<input type="text" placeholder="Введите код" class="contact-input float-right code-input">
+								</label>
+
+								<label class="contact-submit-label send-submit">
+									Отправить
+									<input type="submit" class="contact-submit">
+								</label>
+
+								<label class="contact-submit-label reset-submit float-right">
+									Очистить
+									<input type="submit" class="contact-submit">
+								</label>
+
+							</form>	
+
 						</div>
 					</article>
 
-					<article class="info-block">
-						<header class="info-block-head">
-							<h3 class="info-block-name">
-							Опыт работы</h3>
-						</header>
-						<div class="info-content">
-							<span class="work-exp 
-								work-exp-work">
-								<div class="work-text">
-									<p class="work-place">
-										Фриланс Веб-Разработка
-									</p>
-									<p class="work-date">
-										Август 2015 - До сих пор
-									</p>
-								</div>
-							</span>
-						</div>
-					</article>
-
-					<article class="info-block">
-						<header class="info-block-head">
-							<h3 class="info-block-name">
-							Образование</h3>
-						</header>
-						<div class="info-content">
-							<span class="work-exp 
-									work-exp-study">
-								<span class="work-text">
-									<p class="work-place">
-										Незаконченное высшее. СРбГУ ИТМО
-									</p>
-									<p class="work-date">
-										Сентябрь 2014 - До сих пор
-									</p>
-								</span>
-							</span>
-							<span class="work-exp
-									work-exp-course">
-								<span class="work-text">
-									<p class="work-place">
-										Курсы Loftschool.ru
-									</p>
-									<p class="work-date">
-										Сентябрь 2015 - До сих пор
-									</p>
-								</span>
-							</span>
-							<span class="work-exp
-									work-exp-course">
-								<span class="work-text">
-									<p class="work-place">
-										Курсы HTMLAcademy
-									</p>
-									<p class="work-date">
-										Сентябрь 2014 - Апрель 2014
-									</p>
-								</span>
-							</span>
-						</div>
-					</article>
 				</div>
 			</div>
 		</section>
