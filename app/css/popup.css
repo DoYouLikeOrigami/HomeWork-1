@@ -21,21 +21,21 @@
 
 		.popup-header  {
 			display: block;
-			min-height: 50px;
+			min-height: 44px;
 			border-radius: 4px 4px 0 0;
 			background: rgb(72, 203, 232);
 			box-shadow: 0 10px 0 0 rgb(103, 223, 250);
 			font-size: 25px;
 			color: rgb(255, 255, 255);
 			padding-left: 15px;
-			padding-top: 10px;
+			padding-top: 5px;
 		}
 
 			.popup-close {
 				display: inline-block;
 				float: right;
 				height: 100%;
-				width: 40px;
+				width: 38px;
 				text-indent: -9999px;
 				background-image: url(../img/sprite-popup.png);
 				background-position: -77px -10px;
@@ -44,14 +44,15 @@
 		
 		.popup-form {
 			display: block;
-			padding: 20px 0;
+			padding-top: 15px;
+			padding-bottom: 25px;
 		}
 
 			.popup-label {
 				display: block;
 				width: 320px;
 				margin: 0 auto;
-				margin-bottom: 5px;
+				margin-bottom: 10px;
 			}
 
 				.popup-label-header {
@@ -76,6 +77,10 @@
 						font-size: 13px;
 						color: rgb(72, 203, 232);
 						vertical-align: middle;
+					}
+
+					.big-input {
+						height: 80px;
 					}
 				
 				.file-label {
