@@ -11,8 +11,12 @@ body {
 	background-image: url(../img/mainBG.png);
 }
 
+.hidden {
+	display: none !important;
+}
 
 .wrapper {
+	display: block;
 	position: relative;
 	min-width: 970px;
 	min-height: 100%;

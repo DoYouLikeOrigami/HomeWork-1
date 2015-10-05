@@ -2,7 +2,9 @@
 	display: block;
 	position: relative;
 	width: 590px;
-	margin: 0 auto;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
 	background: rgb(239, 243, 247);
 	border-radius: 4px;
 	box-shadow: 0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.114);

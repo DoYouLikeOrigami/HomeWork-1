@@ -34,12 +34,64 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/works-page.css">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
 
 	<!-- Modernizer -->
 	<script src="bower/modernizer/modernizr.js">
 	</script>
 </head>
 <body>
+
+	<div class="popup-wrapper hidden">
+		<div class="popup">
+			<header class="popup-header">
+				Добавление проекта 
+				<a class="popup-close" id="popup-close">
+					Крестик
+				</a>
+			</header>
+			<form class="popup-form">
+
+				<label class="popup-label">
+					<span class="popup-label-header">
+						Название проекта
+					</span>
+					<input type="text" placeholder="Введите название" class="popup-input">
+				</label>
+
+				<label class="popup-label">
+					<span class="popup-label-header">
+						Картинка проекта
+					</span>
+					<label class="popup-input file-label">
+						<span class="popup-file-placeholder">
+							Загрузите изображение
+						</span>
+						<input type="file" class="popup-file">
+					</label>
+				</label>
+
+				<label class="popup-label">
+					<span class="popup-label-header">
+						URL проекта
+					</span>
+					<input type="text" placeholder="Добавьте ссылку" class="popup-input">
+				</label>
+
+				<label class="popup-label">
+					<span class="popup-label-header">
+						Описание
+					</span>
+					<input type="text" placeholder="Пара слов о вашем проекте" class="popup-input">
+				</label>
+
+				<label class="popup-submit-label">
+					Добавить
+					<input type="submit" class="popup-submit">
+				</label>
+			</form>
+		</div>
+	</div>
 	
 	<div class="wrapper">
 		<header class="main-header">
