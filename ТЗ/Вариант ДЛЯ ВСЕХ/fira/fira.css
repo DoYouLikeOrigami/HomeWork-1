@@ -1,0 +1,22 @@
+
+
+@font-face {
+    font-family: 'fira_sansbook';
+    src: url('firasans-book.eot');
+    src: url('firasans-book.eot?#iefix') format('embedded-opentype'),
+         url('firasans-book.woff') format('woff'),
+         url('firasans-book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fira_sansbook_italic';
+    src: url('firasans-bookitalic.eot');
+    src: url('firasans-bookitalic.eot?#iefix') format('embedded-opentype'),
+         url('firasans-bookitalic.woff') format('woff'),
+         url('firasans-bookitalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

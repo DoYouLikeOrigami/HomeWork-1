@@ -18,8 +18,8 @@
 	<meta name="author" content="Anton Nemtsev">
 
 	<!-- favicon.ico -->
-	<link rel="shortcut icon" href="/favicon.ico" 	type="image/x-icon">
-	<link rel="icon" href="/favicon.ico"
+	<link rel="shortcut icon" href="./favicon.ico" 	type="image/x-icon">
+	<link rel="icon" href="./favicon.ico"
 		type="image/x-icon">
 
 	<!-- bower CSS -->
@@ -42,15 +42,15 @@
 </head>
 <body>
 
-	<div class="popup-wrapper hidden">
+	<div id="project-popup"> 
 		<div class="popup">
 			<header class="popup-header">
 				Добавление проекта 
-				<a class="popup-close" id="popup-close">
+				<a class="popup-close b-close" id="close-popup">
 					Крестик
 				</a>
 			</header>
-			<form class="popup-form">
+			<form class="popup-form" id="add-new-project">
 
 				<label class="popup-label">
 					<span class="popup-label-header">
@@ -270,7 +270,8 @@
 									</span>
 								</div>
 
-								<div class="work-example">
+								<div class="work-example"
+									id="show-popup">
 									<label 
 										class="work-new">
 										<div class="work-new-content">
@@ -301,6 +302,9 @@
 	</footer>
 
 	<script src="bower/jquery/jquery.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.min.js"></script>
+	<script src="bower/qtip2/jquery.qtip.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/add-project.js"></script>
 </body>
 </html>
