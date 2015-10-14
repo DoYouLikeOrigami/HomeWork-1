@@ -50,13 +50,16 @@
 					Крестик
 				</a>
 			</header>
-			<form class="popup-form" id="add-new-project">
+			<form role="form" class="popup-form" id="add-new-project">
+
+				<div class="server-mes success-mes"></div>
+				<div class="server-mes error-mes"></div>
 
 				<label class="popup-label">
 					<span class="popup-label-header">
 						Название проекта
 					</span>
-					<input type="text" placeholder="Введите название" class="popup-input">
+					<input type="text" name="projectName" placeholder="Введите название" class="popup-input">
 				</label>
 
 				<label class="popup-label">
@@ -67,7 +70,8 @@
 						<span class="popup-file-placeholder">
 							Загрузите изображение
 						</span>
-						<input type="file" class="popup-file">
+						<input type="file" name="projectImg" class="popup-file">
+						<input type="hidden" class="fileurl" name="fileurl">
 					</label>
 				</label>
 
@@ -75,14 +79,14 @@
 					<span class="popup-label-header">
 						URL проекта
 					</span>
-					<input type="text" placeholder="Добавьте ссылку" class="popup-input big-input">
+					<input type="text" name="projectUrl" placeholder="Добавьте ссылку" class="popup-input big-input">
 				</label>
 
 				<label class="popup-label">
 					<span class="popup-label-header">
 						Описание
 					</span>
-					<input type="text" placeholder="Пара слов о вашем проекте" class="popup-input">
+					<input type="text" name="projectComment" placeholder="Пара слов о вашем проекте" class="popup-input">
 				</label>
 
 				<label class="popup-submit-label">
@@ -156,24 +160,24 @@
 							</a>
 						</li>
 					</ul>
-					<ul class="contacts">
-						<li class="contact-item 
+					<div class="contacts">
+						<a class="contact-item 
 							contact-header">
 							Контакты
-						</li>
-						<li class="contact-item 
+						</a>
+						<a class="contact-item 
 							contact-mail">
 							DoYouLikeOrigami@gmail.com
-						</li>
-						<li  class="contact-item 
+						</a>
+						<a  class="contact-item 
 							contact-phone">
 							+7(911)7485349
-						</li>
-						<li class="contact-item 
+						</a>
+						<a class="contact-item 
 							contact-skype">
 							joker.imba24
-						</li>
-					</ul>
+						</a>
+					</div>
 				</aside>
 			
 				<div class="info-wrapper">

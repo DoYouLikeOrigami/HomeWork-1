@@ -231,7 +231,7 @@ body {
 
 				.contact-item {
 					display: block;
-					padding: 10px 0px 4px 40px;
+					padding: 8px 0px 6px 40px;
 					font-size: 17px;
 					cursor: pointer;
 				}
@@ -277,7 +277,7 @@ body {
 					background-color: rgb(65, 185, 212);
 					font-size: 14px;
 					padding-left: 10px;
-					padding-bottom: 9px;
+					padding-bottom: 8px;
 				}
 
 					.contact-mail:before {
@@ -368,7 +368,7 @@ body {
 				}
 
 					.info-fact {
-						margin-bottom: 15px;
+						margin-bottom: 6px;
 						font-size: 15px;
 					}
 
@@ -444,6 +444,8 @@ body {
 							.work-date {
 								margin: 0;
 								padding: 0;
+								max-width: 450px;
+								display: block;
 							}
 
 							.work-place {

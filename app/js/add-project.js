@@ -30,7 +30,7 @@ var myModule = (function () {
 			url = '../php/add-project.php',
 			data = form.serialize();
 
-		console.log(data || 'no data');
+		console.log(data);
 
 		$.ajax({
 			url: url,
@@ -39,14 +39,15 @@ var myModule = (function () {
 			data: data,
 		})
 		.done(function(ans) {
-			console.log("success");
 			console.log(ans);
+			if (ans.status === 'Ok') {
+				form.find('.success-mes').text(ans.text).show();
+			} else {
+				form.find('.error-mes').text(ans.text).show();
+			}
 		})
 		.fail(function() {
 			console.log("error");
-		})
-		.always(function() {
-			console.log("complete");
 		});
 		
 	};
