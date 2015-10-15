@@ -50,8 +50,9 @@ html {
 				background: rgba(1, 108, 164, 0.749);
 				z-index: 2;
 				text-align: center;
-				display: none;
-				transition: 0.5s;
+				display: block;
+				opacity: 0;
+				transition: 0.3s;
 			}
 
 				.work-example-name-text {
@@ -68,7 +69,7 @@ html {
 				}
 
 			.work-example-image-wrapper:hover .work-example-name {
-				display: block;
+				opacity: 1;;
 			}
 
 

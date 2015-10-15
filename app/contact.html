@@ -79,7 +79,7 @@
 		<div class="gradient"></div>
 
 		<section class="main-content">
-			<div class="main-wrapper">
+			<div class="main-wrapper clearfix">
 				<aside class="main-menu">
 					<ul class="nav">
 						<li class="nav-item">
@@ -105,22 +105,28 @@
 						</li>
 					</ul>
 					<div class="contacts">
-						<a class="contact-item 
-							contact-header">
+						<header class="contact-header">
 							Контакты
-						</a>
-						<a class="contact-item 
-							contact-mail">
-							DoYouLikeOrigami@gmail.com
-						</a>
-						<a  class="contact-item 
-							contact-phone">
-							+7(911)7485349
-						</a>
-						<a class="contact-item 
-							contact-skype">
-							joker.imba24
-						</a>
+						</header>
+						<ul class="contact-list">
+						<li class="contact-item">
+							<a href="mailto:doyoulikeorigami@gmail.com" class="contact-link contact-mail">
+								DoYouLikeOrigami@gmail.com
+							</a>
+						</li>
+						<li class="contact-item">
+							<a href="tel:+79117485349" class="contact-link
+								contact-phone">
+								+7(911)7485349
+							</a>
+						</li>
+						<li class="contact-item">
+							<a href="skype:joker.imba24" class="contact-link 
+								contact-skype">
+								joker.imba24
+							</a>
+						</li>
+						</ul>
 					</div>
 				</aside>
 			
@@ -155,7 +161,7 @@
 									<span class="contact-label-header">
 										Сообщение
 									</span>
-									<input type="textarea" placeholder="Кратко в чем суть" class="contact-input input-large">
+									<textarea placeholder="Кратко в чем суть" class="contact-input input-large"></textarea>
 								</label>
 
 								<label class="contact-label full-width">
