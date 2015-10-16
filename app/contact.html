@@ -31,6 +31,7 @@
 	<link rel="stylesheet" type="text/css" href="fonts/Proxima-Nova/Proxima.css">-->
 
 	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="bower/qtip2/jquery.qtip.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
@@ -141,27 +142,27 @@
 						</header>
 						<div class="info-content">
 							
-							<form class="contact-form">
+							<form class="contact-form clearfix">
 
 								<label class="contact-label half-width">
 									<span class="contact-label-header">
 										Имя
 									</span>
-									<input type="text" placeholder="Как к Вам обращаться" class="contact-input">
+									<input type="text" placeholder="Как к Вам обращаться" class="input contact-input" qtip-content="Вы не ввели имя" qtip-position="left" id="client-name">
 								</label>
 
 								<label class="contact-label half-width float-right">
 									<span class="contact-label-header">
 										Email
 									</span>
-									<input type="text" placeholder="Куда мне писать" class="contact-input float-right">
+									<input type="text" placeholder="Куда мне писать" class="input contact-input float-right" qtip-content="Вы не написали, куда Вам ответить" qtip-position="right" id="client-mail">
 								</label>
 
 								<label class="contact-label full-width">
 									<span class="contact-label-header">
 										Сообщение
 									</span>
-									<textarea placeholder="Кратко в чем суть" class="contact-input input-large"></textarea>
+									<textarea placeholder="Кратко в чем суть" class="input contact-input input-large" qtip-content="Пожалуйста, опишите свой интерес" qtip-position="right" id="client-message"></textarea>
 								</label>
 
 								<label class="contact-label full-width">
@@ -171,17 +172,17 @@
 									<div class="captcha-wrapper">
 										<img src="img/code.jpg" class="captcha" alt="captcha">
 									</div>
-									<input type="text" placeholder="Введите код" class="contact-input float-right code-input">
+									<input type="text" placeholder="Введите код" class="input contact-input float-right code-input" qtip-content="Докажите, что вы не робот" qtip-position="right" id="captcha">
 								</label>
 
 								<label class="contact-submit-label send-submit">
 									Отправить
-									<input type="submit" class="contact-submit">
+									<input type="submit" class="submit contact-submit">
 								</label>
 
 								<label class="contact-submit-label reset-submit float-right">
 									Очистить
-									<input type="submit" class="contact-submit">
+									<input type="submit" class=" reset contact-submit">
 								</label>
 
 							</form>	
@@ -205,6 +206,8 @@
 	</footer>
 
 	<script src="bower/jquery/jquery.js"></script>
+	<script src="bower/qtip2/jquery.qtip.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/show-qtip.js"></script>
 </body>
 </html>

@@ -1,13 +1,13 @@
 <?php
 
 	$data = array();
-	$name = _POST['projectName'];
+	$name = $_POST['projectName'];
 
 	if ($name === '') {
-		$data['status'] = 'error';
-		$data['text'] = 'Заполните имя';
+        $data['status'] = 'error';
+		$data['text'] = 'Напишите имя';
 	} else {
-		$data['status'] = 'Ok';
+        $data['status'] = 'Ok';
 		$data['text'] = 'Корректно';
 	}
 

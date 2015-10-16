@@ -1,4 +1,5 @@
 var myModule = (function () {
+
 	var init = function () {
 		_setUpListeners();
 	};
@@ -10,12 +11,20 @@ var myModule = (function () {
 
 	var _showPopup = function (e) {
 		e.preventDefault();
-		var bPopup = $('#project-popup')
+		var bPopup = $('#project-popup'),
+            form = bPopup.find('.form');
 		bPopup.bPopup({
 			speed: 650,
 			transition: 'slideDown',
 			modalColor: '#7E8C99',
 			opacity: 0.75,
+			onClose: function () {
+              	form.find('.server-mes')
+                		.text('')
+                		.hide();
+				form.find('.input')
+						.trigger('hideTooltip');
+			}
 		});
 		/*$('#close-popup').on('click', function (ec) {
 			e.preventDefault();
@@ -25,21 +34,16 @@ var myModule = (function () {
 
 	var _addProject = function (e) {
 		e.preventDefault();
-
+		
 		var form = $(this),
 			url = '../php/add-project.php',
-			data = form.serialize();
+            serverAnswer = _ajaxForm(form, url);
+      	
+      	form.find('.server-mes')
+                		.text('')
+                		.hide();
 
-		console.log(data);
-
-		$.ajax({
-			url: url,
-			type: 'POST',
-			dataType: 'json',
-			data: data,
-		})
-		.done(function(ans) {
-			console.log(ans);
+		serverAnswer.done(function(ans) {
 			if (ans.status === 'Ok') {
 				form.find('.success-mes').text(ans.text).show();
 			} else {
@@ -51,10 +55,31 @@ var myModule = (function () {
 		});
 		
 	};
+  
+  	var _ajaxForm = function (form, url) {
+    	
+      //if (!valid) return false;
+      
+      var data = form.serialize();
+      
+      var result = $.ajax({
+			url: url,
+			type: 'POST',
+			dataType: 'json',
+			data: data,
+      		}).fail( function (ans) {
+        		console.log('Проблемы в PHP');
+        		form.find('.error-mes').text('На сервере произошла ошибка').show();
+      			});
+                  
+      return result;
+      
+    };
 
 	return {
 		init: init
 	};
+
 })();
 
 myModule.init();

@@ -31,6 +31,7 @@
 	<link rel="stylesheet" type="text/css" href="fonts/Proxima-Nova/Proxima.css">-->
 
 	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="bower/qtip2/jquery.qtip.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/works-page.css">
@@ -50,7 +51,7 @@
 					Крестик
 				</a>
 			</header>
-			<form role="form" class="popup-form" id="add-new-project">
+			<form role="form" class="form popup-form" id="add-new-project">
 
 				<div class="server-mes success-mes"></div>
 				<div class="server-mes error-mes"></div>
@@ -59,7 +60,7 @@
 					<span class="popup-label-header">
 						Название проекта
 					</span>
-					<input type="text" name="projectName" placeholder="Введите название" class="popup-input">
+					<input type="text" name="projectName" placeholder="Введите название" class="input popup-input" qtip-content="Введи название проекта" qtip-position="right" id="project-name">
 				</label>
 
 				<label class="popup-label">
@@ -70,7 +71,7 @@
 						<span class="popup-file-placeholder">
 							Загрузите изображение
 						</span>
-						<input type="file" name="projectImg" class="popup-file">
+						<input type="file" name="projectImg" class="input popup-file" qtip-content="Загрузи изображение проекта" qtip-position="right" id="project-img">
 						<input type="hidden" class="fileurl" name="fileurl">
 					</label>
 				</label>
@@ -79,19 +80,19 @@
 					<span class="popup-label-header">
 						URL проекта
 					</span>
-					<input type="text" name="projectUrl" placeholder="Добавьте ссылку" class="popup-input big-input">
+					<input type="text" name="projectUrl" placeholder="Добавьте ссылку" class="input popup-input" qtip-content="Добавь ссылку на проект" qtip-position="right" id="project-url">
 				</label>
 
 				<label class="popup-label">
 					<span class="popup-label-header">
 						Описание
 					</span>
-					<input type="text" name="projectComment" placeholder="Пара слов о вашем проекте" class="popup-input">
+					<textarea name="projectComment" placeholder="Пара слов о вашем проекте" class="input popup-input big-input" qtip-content="Опиши проект" qtip-position="right" id="project-descr"></textarea>
 				</label>
 
 				<label class="popup-submit-label">
 					Добавить
-					<input type="submit" class="popup-submit">
+					<input type="submit" class="submit popup-submit">
 				</label>
 			</form>
 		</div>
@@ -316,5 +317,6 @@
 	<script src="bower/qtip2/jquery.qtip.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/add-project.js"></script>
+	<script src="js/show-qtip.js"></script>
 </body>
 </html>

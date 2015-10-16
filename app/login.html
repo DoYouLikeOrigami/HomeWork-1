@@ -31,6 +31,7 @@
 	<link rel="stylesheet" type="text/css" href="fonts/Proxima-Nova/Proxima.css">-->
 
 	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="bower/qtip2/jquery.qtip.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/login.css">
@@ -52,18 +53,18 @@
 						<span class="login-label-header">
 							Логин
 						</span>
-						<input type="text" placeholder="Введите логин" class="login-input">
+						<input type="text" placeholder="Введите логин" class="input login-input" qtip-content="Вы не ввели логин" qtip-position="right" id="login">
 					</label>
 					<label class="login-label login-label-bigger-margin">
 						<span class="login-label-header">
 							Пароль
 						</span>
-						<input type="text" placeholder="Введите пароль" class="login-input">
+						<input type="text" placeholder="Введите пароль" class="input login-input" qtip-content="Вы не ввели пароль" qtip-position="right" id="password">
 					</label>
 					<div class="buttons-wrapper clearfix">
 						<label class="login-submit-label">
 							Войти
-							<input type="submit" class="login-submit">
+							<input type="submit" class="submit login-submit">
 						</label>
 						<a class="login-return-button" href="index.html">
 							Назад
@@ -84,6 +85,8 @@
 	</footer>
 
 	<script src="bower/jquery/jquery.js"></script>
+	<script src="bower/qtip2/jquery.qtip.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/show-qtip.js"></script>
 </body>
 </html>
