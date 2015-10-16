@@ -49,11 +49,16 @@ body {
 		color: #49bb7b;
 	}
 
-	.error-mes {
-		background-color: #fad2d1;
-		border-color: #f97e76;
-		color: #f97e76;
+	.error-mes,
+	.has-error {
+		background-color: #fad2d1 !important;
+		border-color: #f97e76 !important;
+		color: #f97e76 !important;
 	}
+
+		.has-error[placeholder] {
+			color: #f97e76 !important;
+		}
 
 .wrapper {
 	display: block;
