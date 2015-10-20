@@ -108,7 +108,7 @@
 							width: 100%;
 						}
 
-				.contact-submit-label {
+				.contact-submit {
 					display: inline-block;
 					width: 135px;
 					height: 30px;
@@ -119,19 +119,13 @@
 					font-size: 19px;
 					color: rgb(255, 255, 255);
 					box-shadow: 0 5px 0 0 rgb(59, 168, 192);
+					border: none;
 				}
 
 					.reset-submit {
 						background-color: rgb(132, 157, 181);
 						box-shadow: 0 5px 0 0 rgb(104, 123, 143);
 						width: 125px;
-					}
-
-
-					.contact-submit {
-						position: absolute;
-						top: 0;
-						left: -9999px;
 					}
 
 

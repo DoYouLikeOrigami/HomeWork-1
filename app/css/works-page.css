@@ -17,7 +17,7 @@ html {
 		.work-example {
 			display: inline-block;
 			vertical-align: top;
-			margin-right: 24px;
+			margin-right: 20px;
 			margin-bottom: 15px;
 			width: 185px;
 			min-height: 225px;
@@ -112,17 +112,21 @@ html {
 				cursor: pointer;
 			}
 
-			.work-new-img {
-				display: inline-block;
-				margin-bottom: 10px;
-			}
-
 			.work-new-text {
 				display: inline-block;
 				width: 100%;
 				font-size: 13px;
 				color: rgb(59, 168, 192);
 			}
+
+				.work-new-text:before {
+					content: "";
+					display: block;
+					margin: 0 auto;
+					width: 40px;
+					height: 40px;
+					background: url(../img/my-work/add.png) 0 0 no-repeat;
+				}
 
 			.work-new-file {
 				position: absolute;

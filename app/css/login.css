@@ -67,7 +67,7 @@
 		margin: 20px auto;
 	}
 
-	.login-submit-label {
+	.login-submit {
 		display: inline-block;
 		float: left;
 		background: rgb(72, 203, 232);
@@ -79,13 +79,8 @@
 		font-size: 36px;
 		color: rgb(246, 246, 246);
 		box-shadow: 0 5px 0 0 rgb(59, 168, 192);
+		border: none;
 	}
-
-		.login-submit {
-			position: absolute;
-			left: -9999px;
-			top: 0;
-		}
 
 	.login-return-button {
 		display: inline-block;

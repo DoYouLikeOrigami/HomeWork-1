@@ -477,6 +477,7 @@ body {
     						background-repeat: no-repeat;
     						width: 42px;
     						height: 34px;
+    						vertical-align: top;
 						}
 
 							.work-exp-work:before {
