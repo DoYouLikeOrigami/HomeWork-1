@@ -11,6 +11,10 @@ body {
 	background-image: url(../img/mainBG.png);
 }
 
+textarea {
+	resize: none;
+}
+
 .hidden {
 	display: none !important;
 }

@@ -1,4 +1,4 @@
-var validation = (function () {
+﻿var validation = (function () {
 
 	var init = function () {
 		_setUpListeners();
@@ -8,6 +8,7 @@ var validation = (function () {
 
 	};
 
+	//создаёт кутип
 	var _createQtip = function (el, pos, text) {
 
 		if (pos === 'right') {
@@ -40,6 +41,8 @@ var validation = (function () {
 
 	};
 
+
+	//Убирает qtip и класс ошибки у инпута 
 	var _hideQtip = function (el) {
 		el.removeClass('has-error');
 		el.qtip({
@@ -49,8 +52,25 @@ var validation = (function () {
 		}).trigger('hideTooltip');
 	};
 
-	var validateForm = function (form) {
+	//Убирает ошшибку и кутип с элемента, если тот в фокусе
+	var _watchElements = function (form) {
+		var elements = form.find('input, textarea').
+							not('input[type="file"], input[type="hidden"], input[type="submit"]');
 
+		
+		$.each(elements, function (index, val) {
+			var element = $(val);
+			element.on('focus', function () {
+				_hideQtip(element);
+				element.removeClass('has-error');
+			})
+		})
+
+	};
+
+	//основная функция. Вызывает вотчер. Проходится по всем элементам и вызывает кутипы для пустых.
+	var validateForm = function (form) {
+		_watchElements(form);
 		var elements = form.find('input, textarea').
 							not('input[type="file"], input[type="hidden"], input[type="submit"]'),
 			valid = true;
@@ -74,9 +94,23 @@ var validation = (function () {
 
 	};
 
+	var clearForm = function (form) {
+
+		var elements = form.find('input, textarea').
+							not('input[type="file"], input[type="hidden"], input[type="submit"]');
+
+		$.each(elements, function (index, val) {
+			var element = $(val);
+			element.val('');
+			_hideQtip(element);
+		});
+
+	};
+
 	return {
 		init: init,
-		validateForm: validateForm
+		validateForm: validateForm,
+		clearForm: clearForm
 	};
 
 })();

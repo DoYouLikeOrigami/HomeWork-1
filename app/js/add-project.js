@@ -23,22 +23,21 @@ var myModule = (function () {
                 		.text('')
                 		.hide();
 				form.find('.input')
-						.trigger('hideTooltip');
+						.trigger('hideTooltip')
+						.removeClass('has-error');
 			}
 		});
-		/*$('#close-popup').on('click', function (ec) {
-			e.preventDefault();
-			bPopup.close();
-		});*/
 	};
 
 	var _addProject = function (e) {
 		e.preventDefault();
 		
 		var form = $(this),
-			url = '../php/add-project.php',
-            serverAnswer = _ajaxForm(form, url);
+			url = '../php/add-project.php';
+            //serverAnswer = _ajaxForm(form, url);
       	
+      	validation.validateForm(form);
+      	/*
       	form.find('.server-mes')
                 		.text('')
                 		.hide();
@@ -52,10 +51,10 @@ var myModule = (function () {
 		})
 		.fail(function() {
 			console.log("error");
-		});
+		});*/
 		
 	};
-  
+  	/*
   	var _ajaxForm = function (form, url) {
     	
       //if (!valid) return false;
@@ -74,7 +73,7 @@ var myModule = (function () {
                   
       return result;
       
-    };
+    };*/
 
 	return {
 		init: init
