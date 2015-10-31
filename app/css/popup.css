@@ -1,4 +1,4 @@
-#project-popup {
+﻿#project-popup {
 	display: none;
 }
 
@@ -94,7 +94,7 @@
 						background-position: -5px -10px;
 					}
 
-			.popup-submit-label {
+			.popup-submit {
 				display: block;
 				width: 140px;
 				height: 30px;
@@ -107,9 +107,9 @@
 				cursor: pointer;
 				margin-bottom: 0;
 				box-shadow: 0 5px 0 0 rgb(59, 168, 192);
+				border: none;
 			}
 
-				.popup-submit,
 				.popup-file {
 					position: absolute;
 					top: 0;
