@@ -1,0 +1,111 @@
+extends ../template
+
+block personalStyle
+	link(rel="stylesheet", type="text/css", href="css/main.css")
+
+block title 
+	| Сайт Портфолио
+
+block main-content
+	+aside(1)
+	- var index = 1;
+	wrapper.infoWrapper
+		article.infoBlock
+			header.infoBlock__header
+				h3.infoBlock__header-name
+					| Основная информация
+			.infoBlock__content
+
+				.avatar
+					img.avatar__img(src = "img/Avatar.jpg" alt = "Avatar")
+
+				ul.aboutInfo
+					li.aboutInfo__item
+						span.aboutInfo__item-bold
+							| Меня зовут:
+						span.aboutInfo__item-text
+							| Немцев Антон Сергеевич
+					li.aboutInfo__item
+						span.aboutInfo__item-bold
+							| Мой возраст
+						span.aboutInfo__item-text
+							| 20 лет
+					li.aboutInfo__item
+						span.aboutInfo__item-bold
+							| Мой город:
+						span.aboutInfo__item-text
+							| Санкт-Петербург, Россия
+					li.aboutInfo__item
+						span.aboutInfo__item-bold
+							| Моя специализация:
+						span.aboutInfo__item-text
+							| FRONTEND разработчик
+					li.aboutInfo__item
+						span.aboutInfo__item-bold
+							| Ключевые навыки:
+						span.aboutInfo__item-skill
+							| html
+						span.aboutInfo__item-skill
+							| css
+						span.aboutInfo__item-skill
+							| javascript
+						span.aboutInfo__item-skill
+							| git
+		
+		article.infoBlock
+			header.infoBlock__header
+				h3.infoBlock__header-name
+					| Опыт работы
+			.infoBlock__content
+				.workExp.workIcon
+					.workExp__text
+						.workExp__text-place
+							| Фриланс Веб-разработка
+						.workExp__text-date
+							| Август 2015 - До сих пор
+
+		article.infoBlock
+			header.infoBlock__header
+				h3.infoBlock__header-name
+					| Образование
+			.infoBlock__content
+				.workExp.studyIcon
+					.workExp__text
+						.workExp__text-place
+							| Незаконченное высшее. СРбГУ ИТМО
+						.workExp__text-date
+							| Сентябрь 2014 - До сих пор
+				.workExp.courseIcon
+					.workExp__text
+						.workExp__text-place
+							| Курсы Loftschool.ru
+						.workExp__text-date
+							| Сентябрь 2015 - Ноябрь 2015
+				.workExp.courseIcon
+					.workExp__text
+						.workExp__text-place
+							| Курсы HTMLAcademy
+						.workExp__text-date
+							| Февраль 2014 - Апрель 2014
+	
+	.smallContacts.tablet-only.phone-only
+		ul.smallContacts__list
+			li.smallContacts__list-item.phoneItem
+				a.smallContacts__list-link(href="tel:+79117485349")
+					| +7(911)748-53-49
+			li.smallContacts__list-item.mailItem
+				a.smallContacts__list-link(href="mailto:doyoulikeorigami@gmail.com")
+					| DoYouLikeOrigami@gmail.com
+			li.smallContacts__list-item.skypeItem
+				a.smallContacts__list-link(href="skype:joker.imba24")
+						| joker.imba24
+
+	ul.socials.phoneSocials.phone-only
+		li.socials__icon.socials__vk
+			a.socials__link(href="https://vk.com/origami_joke", target="_blank")
+		li.socials__icon.socials__tw
+			a.socials__link(href="https://twitter.com/origami_joke", target="_blank")
+		li.socials__icon.socials__fb
+			a.socials__link(href="https://facebook.com/origami_joke", target="_blank")
+		li.socials__icon.socials__git
+			a.socials__link(href="https://github.com/DoYouLikeOrigami", target="_blank")

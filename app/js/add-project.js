@@ -1,17 +1,17 @@
-var myModule = (function () {
+var projectModule = (function () {
 
 	var init = function () {
 		_setUpListeners();
 	};
 
 	var _setUpListeners = function () {
-		$('#show-popup').on('click', _showPopup);
-		$('#add-new-project').on('submit', _addProject);
+		$('#showPopup').on('click', _showPopup);
+		$('#addProject').on('submit', _addProject);
 	};
 
 	var _showPopup = function (e) {
 		e.preventDefault();
-		var bPopup = $('#project-popup'),
+		var bPopup = $('#projectPopup'),
             form = bPopup.find('.form');
 		bPopup.bPopup({
 			speed: 650,
@@ -19,12 +19,12 @@ var myModule = (function () {
 			modalColor: '#7E8C99',
 			opacity: 0.75,
 			onClose: function () {
-              	form.find('.server-mes')
+              	form.find('.serverMes')
                 		.text('')
                 		.hide();
 				form.find('.input')
 						.trigger('hideTooltip')
-						.removeClass('has-error');
+						.removeClass('hasError');
 			}
 		});
 	};
@@ -81,6 +81,6 @@ var myModule = (function () {
 
 })();
 
-myModule.init();
+projectModule.init();
 
 

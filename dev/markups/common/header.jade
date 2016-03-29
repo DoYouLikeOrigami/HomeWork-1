@@ -1,0 +1,34 @@
+header.mainHeader
+	wrapper.mainHeader__wrapper.clearfix
+		
+		wpapper.mainHeader__left 
+			wrapper.mainLogo
+				img.mainLogo__img(src="img/logo.png", alt="Сайт-портфолио")
+		
+		wrapper.mainHeader__right
+			ul.socials
+				li.socials__icon.socials__vk
+					a.socials__link(href="https://vk.com/origami_joke", target="_blank")
+				li.socials__icon.socials__tw
+					a.socials__link(href="https://twitter.com/origami_joke", target="_blank")
+				li.socials__icon.socials__fb
+					a.socials__link(href="https://facebook.com/origami_joke", target="_blank")
+				li.socials__icon.socials__git
+					a.socials__link(href="https://github.com/DoYouLikeOrigami", target="_blank")
+
+			wrapper.hiddenMenu.tablet-only
+				a.hiddenMenu__button(href="#")
+					span.hiddenMenu__button-line
+					span.hiddenMenu__button-line
+					span.hiddenMenu__button-line
+
+				ul.mainNav.hidden
+					li(class = "mainNav__item active")
+						a.mainNav__item-link(href="index.html")
+							| Обо мне
+					li(class = "mainNav__item ")
+						a.mainNav__item-link(href="portfolio.html")
+							| Мои работы
+					li(class = "mainNav__item ")
+						a.mainNav__item-link(href="contact.html")
+							| Связаться со мной

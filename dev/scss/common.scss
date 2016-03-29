@@ -1,0 +1,588 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-size: 12px;
+	font-family: "fira_sansbook";
+	background: rgb(239, 243, 247);
+	color: rgb(140, 148, 155);
+	background-image: url(../img/mainBG.png);
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+textarea {
+	resize: none;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.clearfix {
+
+	:before,
+	:after {
+		content: " ";
+		display: table;
+	}
+
+	:after {
+		clear: both;
+	}
+}
+
+.qtip {
+	background-color: rgb(249, 126, 118);
+	font-size: 15px;
+	color: rgb(255, 255, 255);
+	border-color: rgb(249, 126, 118);
+}
+
+.serverMes {
+	display: none;
+	box-sizing: border-box;
+	width: 320px;
+	border: 1px solid rgb(72, 203, 232);
+	font-size: 13px;
+	border-radius: 4px;
+	padding: 10px;
+	margin: 10px auto;
+}
+
+	.successMes {
+		background-color: #b8e1ce;
+		border-color: #49bb7b;
+		color: #49bb7b;
+	}
+
+	.errorMes,
+	.hasError {
+		background-color: #fad2d1 !important;
+		border-color: #f97e76 !important;
+		color: #f97e76 !important;
+	}
+
+		.hasError[placeholder] {
+			color: #f97e76 !important;
+		}
+
+.mainWrapper {
+	display: block;
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+
+	&:after {
+		content: "";
+		display: block;
+		height: 80px;
+	}
+}
+
+/* Описание хэдера */
+
+.mainHeader {
+	display: block;
+	position: relative;
+	height: 118px;
+	background: rgb(239, 243, 247);
+	z-index: 1;
+
+	&__wrapper {
+		display: block;
+		max-width: 1200px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	&__left {
+		display: block;
+		width: 50%;
+		height: 118px;
+		float: left;
+		text-align: left;
+	}
+
+	&__right {
+		display: block;
+		width: 50%;
+		height: 118px;
+		float: right;
+		text-align: right;
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		height: 3px;
+		background: -webkit-linear-gradient(left, rgb(239, 243, 247), rgb(28, 102, 132), rgb(239, 243, 247));
+		background: -o-linear-gradient(left, rgb(239, 243, 247), rgb(28, 102, 132), rgb(239, 243, 247));
+		background: linear-gradient(to right, rgb(239, 243, 247), rgb(28, 102, 132), rgb(239, 243, 247));
+	}
+}
+	
+.mainLogo {
+	display: inline-block;
+	height: 42px; 
+	width: 243px;
+	margin-top: 38px;
+
+	&__img {
+		width: 100%;
+	}
+
+	&__text {
+		display: none;	}
+}
+
+.socials {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+
+	&__icon {
+		display: inline-block;
+		width: 47px;
+		height: 47px;
+		background-image: url(../img/sprite-social.png);
+		background-repeat: no-repeat;
+		text-indent: -9999px;
+		margin-left: 20px;
+		margin-top: 36px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	&__link {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__vk {
+		background-position: -344px -5px;
+
+		&:hover {
+			background-position: -401px -5px;
+		}
+	}
+
+	&__tw {
+		background-position: -231px -5px;
+
+		&:hover {
+			background-position: -288px -5px;
+		}
+	}
+
+	&__fb {
+		background-position: -5px -5px;
+
+		&:hover {
+			background-position: -62px -5px;
+		}
+	}
+
+	&__git {
+		background-position: -118px -5px;
+
+		&:hover {
+			background-position: -175px -5px;
+		}
+	}
+}
+
+/* Описание основного контента */
+
+.mainContent {
+	display: block;
+	position: relative;
+	
+	&__wrapper {
+		display: block;
+		max-width: 960px;
+		position: relative;
+		margin: 0 auto;
+		padding: 40px 0;
+	}
+}
+
+/* Описание навигации */
+
+.mainMenu {
+	display: block;
+	float: left;
+	width: 250px;
+}
+
+.mainNav,
+.mainContacts {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.mainNav {
+	margin-bottom: 25px;
+	border-radius: 5px;
+	background: rgb(239, 243, 247);
+
+	&__item {
+		display: block;
+		padding: 0 10px;
+		margin-bottom: -2px;
+
+		&-link {
+			display: block;
+			color: rgb(59, 168, 192);
+			padding: 19px 15px;
+			text-decoration: none;
+			font-size: 21px;
+			border-bottom: 2px solid rgb(59, 168, 192);
+		}
+
+		&:first-child {
+			border-radius: 5px 5px 0px 0px;
+		}
+
+		&:last-of-type {
+			border-radius: 0px 0px 5px 5px;
+			
+			.mainNav__item-link {
+				border-bottom: none;
+				color: rgb(149, 154, 168);
+			}
+		}
+
+		&:hover {
+			background-color: rgb(59, 168, 192);
+			transition: 0.6s;
+
+			.mainNav__item-link {
+				color: #fff;
+				transition: 0.6s;
+			}
+		}
+
+		&.active {
+			background-color: rgb(59, 168, 192);
+
+			.mainNav__item-link {
+				color: #fff;
+				padding: 17px 15px;
+				font-size: 23px;
+			}
+		}
+	}
+}
+
+.mainContacts {
+	color: #fff;
+	display: block;
+	border-radius: 5px;
+
+	&__header {
+		display: block;
+		padding: 4px 20px;
+		font-size: 21px;
+		background-color: rgb(59, 168, 192);
+		border-radius: 5px 5px 0px 0px;
+	}
+
+	&__list {
+		display: block;
+		padding: 0;
+		margin: 0;
+
+		&-item {
+			display: block;
+
+			&:last-of-type{
+				border-radius: 0 0 5px 5px;
+
+				.mainContacts__list-link {
+					border-radius: 0 0 5px 5px;
+				}
+			}
+
+			&:first-child {
+
+			}
+		}
+
+		&-link {
+			display: block;
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			padding: 8px 0px 6px 40px;
+			font-size: 17px;
+			text-decoration: none;
+			color: #fff;
+
+			&:hover {
+				text-decoration: underline;
+			}
+
+			&:before {
+				content: "";
+				display: inline-block;
+				width: 21px;
+				height: 21px;
+				margin-right: 20px;
+				background-image: url(../img/sprite-contact.png);
+				background-repeat: no-repeat;
+				vertical-align: middle;
+			}
+
+			&.mailLink {
+				background-color: rgb(65, 185, 212);
+				font-size: 14px;
+				padding-left: 10px;
+				padding-bottom: 8px;
+
+				&:before {
+					background-position: -5px 0px;
+					margin-right: 10px;
+					transform: translateY(-25%);
+				}
+			}
+
+			&.phoneLink {
+				background-color: rgb(72, 203, 232);
+
+				&:before {
+					background-position: -36px -5px;
+				}
+			}
+
+			&.skypeLink {
+				background-color: rgb(81, 218, 248);
+
+				&:before {
+					background-position: -65px -5px;
+				}
+			} 
+		}
+	}
+}	
+
+/* Описание информационного блока */
+
+.infoWrapper {
+	display: block;
+	float: right;
+	width: 650px;
+}
+
+.infoBlock {
+	display: block;
+	background-color: rgb(239, 243, 247);
+	margin-bottom: 25px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&__header {
+		display: block;
+
+		&-name {
+			display: inline-block;
+			padding: 13px 24px;
+			font-size: 27px;
+			font-weight: normal;
+			color: rgb(107, 188, 207);
+			margin: 0;
+			margin-top: -2px;
+			border-bottom: 2px solid rgb(107, 188, 207);
+		}
+	}
+
+	&__content {
+		display: block;
+		position: relative;
+		padding: 17px 55px;
+	}
+
+	.avatar {
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 14px;
+		width: 144px;
+		height: 144px;
+		border-radius: 50%;
+		border: 4px solid rgb(59, 168, 190);
+		overflow: hidden;
+
+		&__img {
+			width: 100%;
+		}
+	}
+
+	.aboutInfo {
+		display: inline-block;
+		margin: 0;
+		margin-left: 25px;
+		padding: 0;
+		list-style: none;
+		max-width: 350px;
+
+		&__item {
+			margin-bottom: 6px;
+			font-size: 15px;
+
+			&-bold {
+				display: inline-block;
+				font-size: 17px;
+				font-weight: bold;
+				margin-right: 10px;
+				vertical-align: top;
+			}
+
+			&-text {
+				display: inline-block;
+				//max-width: 180px;
+			}
+
+			&-skill {
+				display: inline-block;
+				font-size: 14px;
+				font-family: "ProximaNovaCond";
+				padding: 3px 15px;
+				margin-right: 10px;
+				margin-bottom: 5px;
+				color: #fff;
+				border-radius: 2px;
+				background: linear-gradient(to bottom, rgb(59, 168, 192) 0%, rgb(59, 168, 192) 50%, rgb(46, 140, 162) 50%, rgb(46, 140, 162) 100%);
+			}
+		}
+	}
+
+	.workExp {
+		display: block;
+		font-size: 14px;
+		margin-bottom: 15px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:before {
+			content: "";
+			display: inline-block;
+			position: relative;
+			background-image: url(../img/sprite-icons.png);
+			background-repeat: no-repeat;
+			width: 42px;
+			height: 34px;
+			vertical-align: top;
+		}
+
+		&.workIcon:before {
+			background-position: -153px -5px;
+		}
+
+		&.studyIcon:before {
+			background-position: -71px -5px;
+		}
+
+		&.courseIcon:before {
+			background-position: 5px -5px;
+		}
+
+		&__text {
+			display: inline-block;
+			margin-left: 30px;
+
+			&-place,
+			&-date {
+				margin: 0;
+				padding: 0;
+				max-width: 450px;
+				display: block;
+			}
+
+			&-place {
+				font-size: 17px;
+				font-weight: bold;
+				margin-bottom: 5px;
+			}
+
+			&-date {
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+/* Описание футера */
+
+.mainFooter {
+	display: block;
+	position: relative;
+	margin-top: -80px;
+	height: 80px;
+	background: rgb(239, 243, 247);
+
+	&:before {
+		content: "";
+		display: block;
+		height: 3px;
+		background: -webkit-linear-gradient(left, rgb(239, 243, 247), rgb(28, 102, 132), rgb(239, 243, 247));
+		background: -o-linear-gradient(left, rgb(239, 243, 247), rgb(28, 102, 132), rgb(239, 243, 247));
+		background: linear-gradient(to right, rgb(239, 243, 247), rgb(28, 102, 132), rgb(239, 243, 247));
+	}
+
+	&__wrapper {
+		display: block;
+		position: relative;
+		max-width: 970px;
+		margin: 0 auto;
+		height: 77px;
+	}
+
+	&__lock {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 35px;
+		width: 20px;
+		height: 32px;
+		margin-top: -18px;
+		background-image: url(../img/sprite-icons.png);
+    	background-repeat: no-repeat;
+    	background-position: -41px -5px;
+
+    	&:hover {
+    		background-position: -123px -5px;
+    	}
+	}
+
+	&__copyright {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		color: rgb(96, 105, 114);
+		font-size: 13px;
+		line-height: 14px;
+		padding-top: 33px;
+	}
+}
+
+.phone-only,
+.tablet-only {
+	display: none;
+}

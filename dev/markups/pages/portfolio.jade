@@ -1,0 +1,151 @@
+extends ../template
+
+block personalStyle
+	link(rel="stylesheet", type="text/css", href="css/main.css")
+	link(rel="stylesheet", type="text/css", href="css/portfolio.css")
+	link(rel="stylesheet", type="text/css", href="css/popup.css")
+
+
+block title 
+	| Сайт Портфолио
+
+block main-content
+
+	#projectPopup
+		.popup
+			header.popup__header
+				| Добавление проекта
+				a.popup__close.b-close
+					| Крестик
+			form.popup__form.form#addProject(role="form")
+				.serverMes.sucessMes
+				.serverMes.errorMes
+				
+				label.popup__label
+					header.popup__label-header
+						| Название проекта
+					input.popup__input.input#projectName(type="text" name="pojectName" placeholder="Введите название" qtip-content="Введи название проекта" qtip-position="right")
+
+				label.popup__label
+					header.popup__label-header
+						| Картинка проекта
+					label.popup__input.popup__file
+						span.popup__file-placeholder
+							| Загрузите изображение
+						input.popup__file-input.input#projectImg(type="file" name="projectImg" qtip-content="Загрузи изображние проекта" qtip-position="right")
+						input.popup__file-url(type="hidden" name="fileUrl")
+
+				label.popup__label
+					header.popup__label-header
+						| URL проекта
+					input.popup__input.input#projectURL(type="text" name="projectURL" placeholder="Ссылка на проект" qtip-content="Добавь ссылку на проект" qtip-position="right")
+
+				label.popup__label
+					header.popup__label-header
+						| Описание
+					textarea.popup__input.input.bigInput#projectDescr(name="projectDescr" placeholder="Пара слов о вашем проекте" qtip-content="Опиши проект" qtip-position="right")
+
+				button.popup__submit.submit(type="submit")
+					| Добавить
+
+	+aside(2)
+	- var index = 2;
+	wrapper.infoWrapper
+		article.infoBlock.portfolioBlock
+			header.infoBlock__header
+				h3.infoBlock__header-name
+					| Мои работы
+			.infoBlock__content
+
+				.workExample
+					wrapper.workExample__image
+						a.workExample__image-link(href="#")
+							span.workExample__image-text
+								| Название сайта
+						img.workExample__image-pic(src="img/my-work/work1.jpg" alt="Моя работа")
+					span.workExample__address
+						| www.site.ru
+					span.workExample__comment
+						| Комментарий о работе
+
+				.workExample
+					wrapper.workExample__image
+						a.workExample__image-link(href="#")
+							span.workExample__image-text
+								| Название сайта
+						img.workExample__image-pic(src="img/my-work/work2.jpg" alt="Моя работа")
+					span.workExample__address
+						| www.site.ru
+					span.workExample__comment
+						| Комментарий о работе
+
+				.workExample
+					wrapper.workExample__image
+						a.workExample__image-link(href="#")
+							span.workExample__image-text
+								| Название сайта
+						img.workExample__image-pic(src="img/my-work/work3.jpg" alt="Моя работа")
+					span.workExample__address
+						| www.site.ru
+					span.workExample__comment
+						| Комментарий о работе
+
+				.workExample
+					wrapper.workExample__image
+						a.workExample__image-link(href="#")
+							span.workExample__image-text
+								| Название сайта
+						img.workExample__image-pic(src="img/my-work/work4.jpg" alt="Моя работа")
+					span.workExample__address
+						| www.site.ru
+					span.workExample__comment
+						| Комментарий о работе
+
+				.workExample
+					wrapper.workExample__image
+						a.workExample__image-link(href="#")
+							span.workExample__image-text
+								| Название сайта
+						img.workExample__image-pic(src="img/my-work/work1.jpg" alt="Моя работа")
+					span.workExample__address
+						| www.site.ru
+					span.workExample__comment
+						| Комментарий о работе
+
+				.workExample#showPopup
+					a.newWork(href="#")
+						.newWork__content
+							| Добавить проект
+	
+	.smallContacts.tablet-only
+		ul.smallContacts__list
+			li.smallContacts__list-item.phoneItem
+				a.smallContacts__list-link(href="tel:+79117485349")
+					| +7(911)748-53-49
+			li.smallContacts__list-item.mailItem
+				a.smallContacts__list-link(href="mailto:doyoulikeorigami@gmail.com")
+					| DoYouLikeOrigami@gmail.com
+			li.smallContacts__list-item.skypeItem
+				a.smallContacts__list-link(href="skype:joker.imba24")
+						| joker.imba24
+
+	ul.socials.phoneSocials.phone-only
+		li.socials__icon.socials__vk
+			a.socials__link(href="https://vk.com/origami_joke", target="_blank")
+		li.socials__icon.socials__tw
+			a.socials__link(href="https://twitter.com/origami_joke", target="_blank")
+		li.socials__icon.socials__fb
+			a.socials__link(href="https://facebook.com/origami_joke", target="_blank")
+		li.socials__icon.socials__git
+			a.socials__link(href="https://github.com/DoYouLikeOrigami", target="_blank")
+block personalScript
+	script(src="bower/bPopup/jquery.bpopup.min.js")
+	script(src="bower/qtip2/jquery.qtip.min.js")
+	script(src="js/add-project.js")
+	script(src="js/validate.js")
+				
+
+				
+
+
+

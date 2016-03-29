@@ -1,0 +1,120 @@
+#projectPopup {
+	display: none;
+}
+
+.popup {
+	display: block;
+	width: 360px;
+	background: rgb(239, 243, 247);
+	box-shadow: 0px 6px 12.48px 0.52px rgba(13, 16, 7, 0.137);
+	border-radius: 5px;
+	z-index: 2;
+
+	&__header {
+		display: block;
+		min-height: 44px;
+		border-radius: 4px 4px 0 0;
+		background: rgb(72, 203, 232);
+		box-shadow: 0 10px 0 0 rgb(103, 223, 250);
+		font-size: 25px;
+		color: rgb(255, 255, 255);
+		padding-left: 15px;
+		padding-top: 5px;
+	}
+
+	&__close {
+		display: inline-block;
+		float: right;
+		height: 100%;
+		width: 38px;
+		text-indent: -9999px;
+		background-image: url(../img/sprite-popup.png);
+		background-position: -77px -10px;
+		cursor: pointer;
+	}
+
+	&__form {
+		display: block;
+		padding-top: 15px;
+		padding-bottom: 25px;
+	}
+
+	&__label {
+		display: block;
+		width: 320px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		
+		&-header {
+			display: block;
+			text-align: center;
+			font-size: 17px;
+			color: rgb(149, 154, 168);
+		}
+	}
+
+	&__input {
+		display: inline-block;
+		width: 100%;
+		border: 1px solid rgb(72, 203, 232);
+		border-radius: 4px;
+		background: rgb(251, 252, 253);
+		height: 40px;
+		padding-left: 10px; 
+		outline: none;
+	}
+
+	&__input[placeholder],
+	.popup__file-placeholder {
+		font-size: 13px;
+		line-height: 39px;
+		color: rgb(72, 203, 232);
+		vertical-align: middle;
+	}
+
+	.bigInput {
+		height: 80px;
+	}
+
+	&__file {
+		position: relative;
+		cursor: pointer;
+
+		&:after {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 100%;
+			width: 52px;
+			border-radius: 0 4px 4px 0;
+			background: rgb(72, 203, 232);
+			background-image: url(../img/sprite-popup.png);
+			background-position: -5px -10px;
+		}
+
+		&-input {
+			position: absolute;
+			top: 0;
+			left: -9999px;
+		}
+	}
+
+	&__submit {
+		display: block;
+		width: 140px;
+		height: 30px;
+		border-radius: 5px;
+		background: rgb(72, 203, 232);
+		margin: 20px auto;
+		font-size: 19px;
+		color: rgb(255, 255, 255);
+		text-align: center;
+		cursor: pointer;
+		margin-bottom: 0;
+		box-shadow: 0 5px 0 0 rgb(59, 168, 192);
+		border: none;
+		outline: none;
+	}
+}

@@ -1,0 +1,27 @@
+mixin aside(index)
+	aside.mainMenu.large-only
+
+		ul.mainNav
+			li(class = "mainNav__item " + ((index == 1) ? 'active' : ''))
+				a.mainNav__item-link(href="index.html")
+					| Обо мне
+			li(class = "mainNav__item " + ((index == 2) ? 'active' : ''))
+				a.mainNav__item-link(href="portfolio.html")
+					| Мои работы
+			li(class = "mainNav__item " + ((index == 3) ? 'active' : ''))
+				a.mainNav__item-link(href="contact.html")
+					| Связаться со мной
+
+		.mainContacts
+			header.mainContacts__header
+				| Контакты
+			ul.mainContacts__list
+				li.mainContacts__list-item 
+					a.mainContacts__list-link.mailLink(href="mailto:doyoulikeorigami@gmail.com")
+						| DoYouLikeOrigami@gmail.com
+				li.mainContacts__list-item 
+					a.mainContacts__list-link.phoneLink(href="tel:+79117485349")
+						| +7(911)748-53-49
+				li.mainContacts__list-item 
+					a.mainContacts__list-link.skypeLink(href="skype:joker.imba24")
+						| joker.imba24

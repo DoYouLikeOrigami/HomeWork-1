@@ -1,212 +1,129 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
-<head>
-	<meta charset="UTF-8">
-
-	<!-- IE -->
-	<meta http-equiv="X-UA-Compatible" 
-		content="IE=edge">
-
-	<!-- Devices -->
-	<meta name="viewport" content="width=970, initial-scale=1">
-
-	<title>Сайт-Портфорлио</title>
-
-	<!-- SEO -->
-	<meta name="description" content="portfolio-site">
-	<meta name="keywords" content="portfolio, 			homework, loftschool">
-	<meta name="author" content="Anton Nemtsev">
-
-	<!-- favicon.ico -->
-	<link rel="shortcut icon" href="/favicon.ico" 	type="image/x-icon">
-	<link rel="icon" href="/favicon.ico"
-		type="image/x-icon">
-
-	<!-- bower CSS -->
-	<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
-
-	<!-- fonts CSS -->
-	<link rel="stylesheet" type="text/css" href="fonts/fira/fira.css">
-	<!--
-	<link rel="stylesheet" type="text/css" href="fonts/Proxima-Nova/Proxima.css">-->
-
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="bower/qtip2/jquery.qtip.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/contact.css">
-
-	<!-- Modernizer -->
-	<script src="bower/modernizer/modernizr.js">
-	</script>
-</head>
-<body>
-	
-	<div class="wrapper">
-		<header class="main-header">
-			<div class="wrapper-header">
-				<div class="header-img-wrapper">
-					<img src="img/logo.png" 
-						class="header-img" alt="Logo">
-					<span class="header-img-text">
-						Сайт-Портфолио
-					</span>
-				</div>
-				<ul class="social">
-					<li class="social-icon social-vk">
-						<a href="https://vk.com/id150472292" class="social-link" 
-						target="_blank">
-							vk-link</a>
-					</li>
-					<li class="social-icon social-tw">
-						<a href="" class="social-link"
-						target="_blank">
-							tw-link</a>
-					</li>
-					<li class="social-icon social-fb">
-						<a href="" class="social-link"
-						target="_blank">
-							fb-link</a>
-					</li>
-					<li class="social-icon social-git">
-						<a href="https://github.com/DoYouLikeOrigami" class="social-link"
-						target="_blank">
-							git-link</a>
-					</li>
-				</ul>
-			</div>
-		</header>
-
-		<div class="gradient"></div>
-
-		<section class="main-content">
-			<div class="main-wrapper clearfix">
-				<aside class="main-menu">
-					<ul class="nav">
-						<li class="nav-item">
-							<a href="index.html" 
-								class="nav-link">
-								Обо мне
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="works-page.html" class="nav-link">
-								Мои работы 
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="" class="nav-link">
-								Мой блог 
-							</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link">
-								Связаться со мной
-							</a>
-						</li>
-					</ul>
-					<div class="contacts">
-						<header class="contact-header">
-							Контакты
-						</header>
-						<ul class="contact-list">
-						<li class="contact-item">
-							<a href="mailto:doyoulikeorigami@gmail.com" class="contact-link contact-mail">
-								DoYouLikeOrigami@gmail.com
-							</a>
-						</li>
-						<li class="contact-item">
-							<a href="tel:+79117485349" class="contact-link
-								contact-phone">
-								+7(911)7485349
-							</a>
-						</li>
-						<li class="contact-item">
-							<a href="skype:joker.imba24" class="contact-link 
-								contact-skype">
-								joker.imba24
-							</a>
-						</li>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" initial-scale="1">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<!--IE-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--SEO-->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="">
+		<!--fonts-->
+		<link rel="stylesheet" type="text/css" href="fonts/fira/fira.css">
+		<!--Modernizer-->
+		<script src="bower/modernizer/src/modernizr.js"></script>
+		<!--styles-->
+		<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/contact.css">
+		<link rel="stylesheet" type="text/css" href="css/media.css">
+		<!--Title-->
+		<title>Сайт Портфолио</title>
+	</head>
+	<body>
+		<wrapper class="mainWrapper">
+			<header class="mainHeader">
+				<wrapper class="mainHeader__wrapper clearfix">
+					<wpapper class="mainHeader__left"> 
+						<wrapper class="mainLogo"><img src="img/logo.png" alt="Сайт-портфолио" class="mainLogo__img"></wrapper>
+					</wpapper>
+					<wrapper class="mainHeader__right">
+						<ul class="socials">
+							<li class="socials__icon socials__vk"><a href="https://vk.com/origami_joke" target="_blank" class="socials__link"></a></li>
+							<li class="socials__icon socials__tw"><a href="https://twitter.com/origami_joke" target="_blank" class="socials__link"></a></li>
+							<li class="socials__icon socials__fb"><a href="https://facebook.com/origami_joke" target="_blank" class="socials__link"></a></li>
+							<li class="socials__icon socials__git"><a href="https://github.com/DoYouLikeOrigami" target="_blank" class="socials__link"></a></li>
+						</ul>
+						<wrapper class="hiddenMenu tablet-only"><a href="#" class="hiddenMenu__button"><span class="hiddenMenu__button-line"></span><span class="hiddenMenu__button-line"></span><span class="hiddenMenu__button-line"></span></a>
+							<ul class="mainNav hidden">
+								<li class="mainNav__item active"><a href="index.html" class="mainNav__item-link">Обо мне</a></li>
+								<li class="mainNav__item "><a href="portfolio.html" class="mainNav__item-link">Мои работы</a></li>
+								<li class="mainNav__item "><a href="contact.html" class="mainNav__item-link">Связаться со мной</a></li>
+							</ul>
+						</wrapper>
+					</wrapper>
+				</wrapper>
+			</header>
+			<section class="mainContent">
+				<wrapper class="mainContent__wrapper clearfix">
+					<aside class="mainMenu large-only">
+						<ul class="mainNav">
+							<li class="mainNav__item "><a href="index.html" class="mainNav__item-link">Обо мне</a></li>
+							<li class="mainNav__item "><a href="portfolio.html" class="mainNav__item-link">Мои работы</a></li>
+							<li class="mainNav__item active"><a href="contact.html" class="mainNav__item-link">Связаться со мной</a></li>
+						</ul>
+						<div class="mainContacts">
+							<header class="mainContacts__header">Контакты</header>
+							<ul class="mainContacts__list">
+								<li class="mainContacts__list-item"> <a href="mailto:doyoulikeorigami@gmail.com" class="mainContacts__list-link mailLink">DoYouLikeOrigami@gmail.com</a></li>
+								<li class="mainContacts__list-item"> <a href="tel:+79117485349" class="mainContacts__list-link phoneLink">+7(911)748-53-49</a></li>
+								<li class="mainContacts__list-item"> <a href="skype:joker.imba24" class="mainContacts__list-link skypeLink">joker.imba24</a></li>
+							</ul>
+						</div>
+					</aside>
+					<wrapper class="infoWrapper">
+						<article class="infoBlock contactBlock">
+							<header class="infoBlock__header">
+								<h3 class="infoBlock__header-name">У вас интересный проект? Напишите мне</h3>
+							</header>
+							<div class="infoBlock__content">
+								<form class="contactForm">
+									<wrapper class="contactForm__row clearfix">
+										<label class="contactForm__label smallLabel">
+											<header class="contactForm__label-header">Имя</header>
+											<input id="contactName" type="text" name="contactName" placeholder="Как к вам обращаться" qtip-content="Пожалуйста, введите имя" qtip-position="left" class="contactForm__label-input">
+										</label>
+										<label class="contactForm__label smallLabel">
+											<header class="contactForm__label-header">Email</header>
+											<input id="contactEmail" type="text" name="contactEmail" placeholder="Куда вам писать" qtip-content="Пожалуйста, введите email" qtip-position="right" class="contactForm__label-input">
+										</label>
+									</wrapper>
+									<label class="contactForm__label bigLabel">
+										<header class="contactForm__label-header">Сообщение</header>
+										<textarea id="contactMess" name="contactMess" placeholder="Кратко в чём суть" qtip-content="Пожалуйста, введите сообщение" qtip-position="right" class="contactForm__label-input bigInput"></textarea>
+									</label>
+									<label class="contactForm__label bigLabel clearfix captchaLabel">
+										<header class="contactForm__label-header">Введите код, указанный на картинке</header>
+										<wrapper class="contactForm__captcha"><img src="img/code.jpg" alt="captcha" class="contactForm__captcha-img"></wrapper>
+										<input id="contactCaptcha" type="text" name="contactCaptcha" placeholder="Введите код" qtip-content="Пожалуйста, введите код" qtip-position="right" class="contactForm__label-input">
+									</label>
+									<label class="contactForm__label bigLabel clearfix">
+										<button type="submit" class="contactForm__button contactForm__submit">Отправить</button><a href="#" class="contactForm__button contactForm__reset">Очистить</a>
+									</label>
+								</form>
+							</div>
+						</article>
+					</wrapper>
+					<div class="smallContacts tablet-only phone-only">
+						<ul class="smallContacts__list">
+							<li class="smallContacts__list-item phoneItem"><a href="tel:+79117485349" class="smallContacts__list-link">+7(911)748-53-49</a></li>
+							<li class="smallContacts__list-item mailItem"><a href="mailto:doyoulikeorigami@gmail.com" class="smallContacts__list-link">DoYouLikeOrigami@gmail.com</a></li>
+							<li class="smallContacts__list-item skypeItem"><a href="skype:joker.imba24" class="smallContacts__list-link">joker.imba24</a></li>
 						</ul>
 					</div>
-				</aside>
-			
-				<div class="info-wrapper">
-
-					<article class="info-block 
-						contact-block">
-						<header class="info-block-head">
-							<h3 class="info-block-name">
-								У вас интересный проект? Напишите мне
-							</h3>
-						</header>
-						<div class="info-content">
-							
-							<form class="contact-form clearfix">
-
-								<label class="contact-label half-width">
-									<span class="contact-label-header">
-										Имя
-									</span>
-									<input type="text" placeholder="Как к Вам обращаться" class="input contact-input" qtip-content="Вы не ввели имя" qtip-position="left" id="client-name">
-								</label>
-
-								<label class="contact-label half-width float-right">
-									<span class="contact-label-header">
-										Email
-									</span>
-									<input type="text" placeholder="Куда мне писать" class="input contact-input float-right" qtip-content="Вы не написали, куда Вам ответить" qtip-position="right" id="client-mail">
-								</label>
-
-								<label class="contact-label full-width">
-									<span class="contact-label-header">
-										Сообщение
-									</span>
-									<textarea placeholder="Кратко в чем суть" class="input contact-input input-large" qtip-content="Пожалуйста, опишите свой интерес" qtip-position="right" id="client-message"></textarea>
-								</label>
-
-								<label class="contact-label full-width">
-									<span class="contact-label-header">
-										Введите код, указаный на картинке
-									</span>
-									<div class="captcha-wrapper">
-										<img src="img/code.jpg" class="captcha" alt="captcha">
-									</div>
-									<input type="text" placeholder="Введите код" class="input contact-input float-right code-input" qtip-content="Докажите, что вы не робот" qtip-position="right" id="captcha">
-								</label>
-
-								<button type="submit" class="contact-submit send-submit">
-									Отправить
-								</button>
-
-								<button type="reset" class="contact-submit reset-submit float-right">
-									Очистить
-								</button>
-
-							</form>	
-
-						</div>
-					</article>
-
-				</div>
-			</div>
-		</section>
-	</div>
-
-	<footer class="main-footer">
-		<div class="gradient"></div>
-		<div class="footer-wrapper">
-			<a href="login.html" class="lock">Войти</a>
-			<div class="copyright">
-				&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его 
-			</div>
-		</div>
-	</footer>
-
-	<script src="bower/jquery/jquery.js"></script>
-	<script src="bower/qtip2/jquery.qtip.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/validate.js"></script>
-	<script src="js/contact.js"></script>
-</body>
+					<ul class="socials phoneSocials phone-only">
+						<li class="socials__icon socials__vk"><a href="https://vk.com/origami_joke" target="_blank" class="socials__link"></a></li>
+						<li class="socials__icon socials__tw"><a href="https://twitter.com/origami_joke" target="_blank" class="socials__link"></a></li>
+						<li class="socials__icon socials__fb"><a href="https://facebook.com/origami_joke" target="_blank" class="socials__link"></a></li>
+						<li class="socials__icon socials__git"><a href="https://github.com/DoYouLikeOrigami" target="_blank" class="socials__link"></a></li>
+					</ul>
+				</wrapper>
+			</section>
+		</wrapper>
+		<footer class="mainFooter">
+			<wrapper class="mainFooter__wrapper"><a href="auth.html" class="mainFooter__lock large-only"></a>
+				<div class="mainFooter__copyright">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его </div>
+			</wrapper>
+		</footer>
+		<script src="bower/jquery/jquery.min.js"></script>
+		<script src="bower/bPopup/jquery.bpopup.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="bower/bPopup/jquery.bpopup.min.js"></script>
+		<script src="bower/qtip2/jquery.qtip.min.js"></script>
+		<script src="js/add-project.js"></script>
+		<script src="js/validate.js"></script>
+	</body>
 </html>

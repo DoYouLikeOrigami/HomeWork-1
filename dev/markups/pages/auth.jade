@@ -1,0 +1,58 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width", initial-scale="1")
+		link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+			
+		//IE
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		
+		//SEO
+		meta(name="description", content="")
+		meta(name="keywords", content="")
+		meta(name="author", content="")
+
+		//fonts
+		link(rel="stylesheet", type="text/css", href="fonts/fira/fira.css")
+
+		//Modernizer
+		script(src="bower/modernizer/src/modernizr.js")
+
+		//styles
+		link(rel="stylesheet", type="text/css", href="bower/normalize-css/normalize.css")
+		link(rel="stylesheet", type="text/css" href="css/main.css")
+		link(rel="stylesheet", type="text/css" href="css/common.css")
+		link(rel="stylesheet", type="text/css" href="css/auth.css")
+		link(rel="stylesheet", type="text/css" href="css/media.css")
+		
+		//Title
+		title
+			| Авторизация
+
+	body
+		wrapper.mainWrapper
+			wrapper.login
+				header.login__header
+					| Авторизруйтесь
+				form.login__form
+					label.login__label
+						header.login__label-header
+							| Логин
+						input.login__label-input(placeholder="Введите логин")
+					label.login__label.bigMargin
+						header.login__label-header
+							| Пароль
+						input.login__label-input(placeholder="Введите пароль")
+					wrapper.login__buttons.clearfix
+						button.login__buttons-submit
+							| Войти
+						a(href="index.html").login__buttons-return
+							| Вернуться
+
+		include ../common/footer
+
+
+		script(src="bower/jquery/jquery.min.js")
+		script(src="bower/bPopup/jquery.bpopup.min.js")
+		script(src="js/main.js")

@@ -1,117 +1,94 @@
-﻿#project-popup {
-	display: none;
-}
+#projectPopup {
+  display: none; }
 
-	.popup {
-		display: block;
-		width: 360px;
-		background: rgb(239, 243, 247);
-		box-shadow: 0px 6px 12.48px 0.52px rgba(13, 16, 7, 0.137);
-		border-radius: 5px;
-		z-index: 2;
-	}
-
-		.popup-header  {
-			display: block;
-			min-height: 44px;
-			border-radius: 4px 4px 0 0;
-			background: rgb(72, 203, 232);
-			box-shadow: 0 10px 0 0 rgb(103, 223, 250);
-			font-size: 25px;
-			color: rgb(255, 255, 255);
-			padding-left: 15px;
-			padding-top: 5px;
-		}
-
-			.popup-close {
-				display: inline-block;
-				float: right;
-				height: 100%;
-				width: 38px;
-				text-indent: -9999px;
-				background-image: url(../img/sprite-popup.png);
-				background-position: -77px -10px;
-				cursor: pointer;
-			}
-		
-		.popup-form {
-			display: block;
-			padding-top: 15px;
-			padding-bottom: 25px;
-		}
-
-			.popup-label {
-				display: block;
-				width: 320px;
-				margin: 0 auto;
-				margin-bottom: 10px;
-			}
-
-				.popup-label-header {
-					display: inline-block;
-					width: 100%;
-					font-size: 17px;
-					color: rgb(149, 154, 168);
-				}
-
-				.popup-input {
-					display: inline-block;
-					width: 100%;
-					border: 1px solid rgb(72, 203, 232);
-					border-radius: 4px;
-					background: rgb(251, 252, 253);
-					height: 40px;
-					padding-left: 10px; 
-				}
-				
-					.popup-input[placeholder],
-					.popup-file-placeholder {
-						font-size: 13px;
-						color: rgb(72, 203, 232);
-						vertical-align: middle;
-					}
-
-					.big-input {
-						height: 80px;
-					}
-				
-				.file-label {
-					position: relative;
-					cursor: pointer;
-				}
-
-					.file-label:after {
-						content: '';
-						display: inline-block;
-						position: absolute;
-						right: 0;
-						top: 0;
-						height: 100%;
-						width: 52px;
-						border-radius: 0 4px 4px 0;
-						background: rgb(72, 203, 232);
-						background-image: url(../img/sprite-popup.png);
-						background-position: -5px -10px;
-					}
-
-			.popup-submit {
-				display: block;
-				width: 140px;
-				height: 30px;
-				border-radius: 5px;
-				background: rgb(72, 203, 232);
-				margin: 20px auto;
-				font-size: 19px;
-				color: rgb(255, 255, 255);
-				text-align: center;
-				cursor: pointer;
-				margin-bottom: 0;
-				box-shadow: 0 5px 0 0 rgb(59, 168, 192);
-				border: none;
-			}
-
-				.popup-file {
-					position: absolute;
-					top: 0;
-					left: -9999px;
-				}
+.popup {
+  display: block;
+  width: 360px;
+  background: #eff3f7;
+  box-shadow: 0px 6px 12.48px 0.52px rgba(13, 16, 7, 0.137);
+  border-radius: 5px;
+  z-index: 2; }
+  .popup__header {
+    display: block;
+    min-height: 44px;
+    border-radius: 4px 4px 0 0;
+    background: #48cbe8;
+    box-shadow: 0 10px 0 0 #67dffa;
+    font-size: 25px;
+    color: white;
+    padding-left: 15px;
+    padding-top: 5px; }
+  .popup__close {
+    display: inline-block;
+    float: right;
+    height: 100%;
+    width: 38px;
+    text-indent: -9999px;
+    background-image: url(../img/sprite-popup.png);
+    background-position: -77px -10px;
+    cursor: pointer; }
+  .popup__form {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 25px; }
+  .popup__label {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+    margin-bottom: 10px; }
+    .popup__label-header {
+      display: block;
+      text-align: center;
+      font-size: 17px;
+      color: #959aa8; }
+  .popup__input {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #48cbe8;
+    border-radius: 4px;
+    background: #fbfcfd;
+    height: 40px;
+    padding-left: 10px;
+    outline: none; }
+  .popup__input[placeholder],
+  .popup .popup__file-placeholder {
+    font-size: 13px;
+    line-height: 39px;
+    color: #48cbe8;
+    vertical-align: middle; }
+  .popup .bigInput {
+    height: 80px; }
+  .popup__file {
+    position: relative;
+    cursor: pointer; }
+    .popup__file:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 52px;
+      border-radius: 0 4px 4px 0;
+      background: #48cbe8;
+      background-image: url(../img/sprite-popup.png);
+      background-position: -5px -10px; }
+    .popup__file-input {
+      position: absolute;
+      top: 0;
+      left: -9999px; }
+  .popup__submit {
+    display: block;
+    width: 140px;
+    height: 30px;
+    border-radius: 5px;
+    background: #48cbe8;
+    margin: 20px auto;
+    font-size: 19px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 0;
+    box-shadow: 0 5px 0 0 #3ba8c0;
+    border: none;
+    outline: none; }

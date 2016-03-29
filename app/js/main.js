@@ -2,6 +2,10 @@ $(function() {
 	console.log('JS работает?');
 });
 
+$(".hiddenMenu__button").click( function() {
+	$(".mainNav").toggleClass('hidden');
+});
+
 /*
 //Функция показа/скрытия меню
 $(".work-new").click( function() {

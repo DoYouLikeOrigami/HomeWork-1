@@ -18,6 +18,8 @@
 		<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/common.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+		<link rel="stylesheet" type="text/css" href="css/popup.css">
 		<link rel="stylesheet" type="text/css" href="css/media.css">
 		<!--Title-->
 		<title>Сайт Портфолио</title>
@@ -48,10 +50,39 @@
 			</header>
 			<section class="mainContent">
 				<wrapper class="mainContent__wrapper clearfix">
+					<div id="projectPopup">
+						<div class="popup">
+							<header class="popup__header">Добавление проекта<a class="popup__close b-close">Крестик</a></header>
+							<form id="addProject" role="form" class="popup__form form">
+								<div class="serverMes sucessMes"></div>
+								<div class="serverMes errorMes"></div>
+								<label class="popup__label">
+									<header class="popup__label-header">Название проекта</header>
+									<input id="projectName" type="text" name="pojectName" placeholder="Введите название" qtip-content="Введи название проекта" qtip-position="right" class="popup__input input">
+								</label>
+								<label class="popup__label">
+									<header class="popup__label-header">Картинка проекта</header>
+									<label class="popup__input popup__file"><span class="popup__file-placeholder">Загрузите изображение</span>
+										<input id="projectImg" type="file" name="projectImg" qtip-content="Загрузи изображние проекта" qtip-position="right" class="popup__file-input input">
+										<input type="hidden" name="fileUrl" class="popup__file-url">
+									</label>
+								</label>
+								<label class="popup__label">
+									<header class="popup__label-header">URL проекта</header>
+									<input id="projectURL" type="text" name="projectURL" placeholder="Ссылка на проект" qtip-content="Добавь ссылку на проект" qtip-position="right" class="popup__input input">
+								</label>
+								<label class="popup__label">
+									<header class="popup__label-header">Описание</header>
+									<textarea id="projectDescr" name="projectDescr" placeholder="Пара слов о вашем проекте" qtip-content="Опиши проект" qtip-position="right" class="popup__input input bigInput"></textarea>
+								</label>
+								<button type="submit" class="popup__submit submit">Добавить</button>
+							</form>
+						</div>
+					</div>
 					<aside class="mainMenu large-only">
 						<ul class="mainNav">
-							<li class="mainNav__item active"><a href="index.html" class="mainNav__item-link">Обо мне</a></li>
-							<li class="mainNav__item "><a href="portfolio.html" class="mainNav__item-link">Мои работы</a></li>
+							<li class="mainNav__item "><a href="index.html" class="mainNav__item-link">Обо мне</a></li>
+							<li class="mainNav__item active"><a href="portfolio.html" class="mainNav__item-link">Мои работы</a></li>
 							<li class="mainNav__item "><a href="contact.html" class="mainNav__item-link">Связаться со мной</a></li>
 						</ul>
 						<div class="mainContacts">
@@ -64,61 +95,32 @@
 						</div>
 					</aside>
 					<wrapper class="infoWrapper">
-						<article class="infoBlock">
+						<article class="infoBlock portfolioBlock">
 							<header class="infoBlock__header">
-								<h3 class="infoBlock__header-name">Основная информация</h3>
+								<h3 class="infoBlock__header-name">Мои работы</h3>
 							</header>
 							<div class="infoBlock__content">
-								<div class="avatar"><img src="img/Avatar.jpg" alt="Avatar" class="avatar__img"></div>
-								<ul class="aboutInfo">
-									<li class="aboutInfo__item"><span class="aboutInfo__item-bold">Меня зовут:</span><span class="aboutInfo__item-text">Немцев Антон Сергеевич</span></li>
-									<li class="aboutInfo__item"><span class="aboutInfo__item-bold">Мой возраст</span><span class="aboutInfo__item-text">20 лет</span></li>
-									<li class="aboutInfo__item"><span class="aboutInfo__item-bold">Мой город:</span><span class="aboutInfo__item-text">Санкт-Петербург, Россия</span></li>
-									<li class="aboutInfo__item"><span class="aboutInfo__item-bold">Моя специализация:</span><span class="aboutInfo__item-text">FRONTEND разработчик</span></li>
-									<li class="aboutInfo__item"><span class="aboutInfo__item-bold">Ключевые навыки:</span><span class="aboutInfo__item-skill">html</span><span class="aboutInfo__item-skill">css</span><span class="aboutInfo__item-skill">javascript</span><span class="aboutInfo__item-skill">git</span></li>
-								</ul>
-							</div>
-						</article>
-						<article class="infoBlock">
-							<header class="infoBlock__header">
-								<h3 class="infoBlock__header-name">Опыт работы</h3>
-							</header>
-							<div class="infoBlock__content">
-								<div class="workExp workIcon">
-									<div class="workExp__text">
-										<div class="workExp__text-place">Фриланс Веб-разработка</div>
-										<div class="workExp__text-date">Август 2015 - До сих пор</div>
-									</div>
+								<div class="workExample">
+									<wrapper class="workExample__image"><a href="#" class="workExample__image-link"><span class="workExample__image-text">Название сайта</span></a><img src="img/my-work/work1.jpg" alt="Моя работа" class="workExample__image-pic"></wrapper><span class="workExample__address">www.site.ru</span><span class="workExample__comment">Комментарий о работе</span>
 								</div>
-							</div>
-						</article>
-						<article class="infoBlock">
-							<header class="infoBlock__header">
-								<h3 class="infoBlock__header-name">Образование</h3>
-							</header>
-							<div class="infoBlock__content">
-								<div class="workExp studyIcon">
-									<div class="workExp__text">
-										<div class="workExp__text-place">Незаконченное высшее. СРбГУ ИТМО</div>
-										<div class="workExp__text-date">Сентябрь 2014 - До сих пор</div>
-									</div>
+								<div class="workExample">
+									<wrapper class="workExample__image"><a href="#" class="workExample__image-link"><span class="workExample__image-text">Название сайта</span></a><img src="img/my-work/work2.jpg" alt="Моя работа" class="workExample__image-pic"></wrapper><span class="workExample__address">www.site.ru</span><span class="workExample__comment">Комментарий о работе</span>
 								</div>
-								<div class="workExp courseIcon">
-									<div class="workExp__text">
-										<div class="workExp__text-place">Курсы Loftschool.ru</div>
-										<div class="workExp__text-date">Сентябрь 2015 - Ноябрь 2015</div>
-									</div>
+								<div class="workExample">
+									<wrapper class="workExample__image"><a href="#" class="workExample__image-link"><span class="workExample__image-text">Название сайта</span></a><img src="img/my-work/work3.jpg" alt="Моя работа" class="workExample__image-pic"></wrapper><span class="workExample__address">www.site.ru</span><span class="workExample__comment">Комментарий о работе</span>
 								</div>
-								<div class="workExp courseIcon">
-									<div class="workExp__text">
-										<div class="workExp__text-place">Курсы HTMLAcademy</div>
-										<div class="workExp__text-date">Февраль 2014 - Апрель 2014</div>
-									</div>
+								<div class="workExample">
+									<wrapper class="workExample__image"><a href="#" class="workExample__image-link"><span class="workExample__image-text">Название сайта</span></a><img src="img/my-work/work4.jpg" alt="Моя работа" class="workExample__image-pic"></wrapper><span class="workExample__address">www.site.ru</span><span class="workExample__comment">Комментарий о работе</span>
 								</div>
+								<div class="workExample">
+									<wrapper class="workExample__image"><a href="#" class="workExample__image-link"><span class="workExample__image-text">Название сайта</span></a><img src="img/my-work/work1.jpg" alt="Моя работа" class="workExample__image-pic"></wrapper><span class="workExample__address">www.site.ru</span><span class="workExample__comment">Комментарий о работе</span>
+								</div>
+								<div id="showPopup" class="workExample"><a href="#" class="newWork">
+										<div class="newWork__content">Добавить проект</div></a></div>
 							</div>
 						</article>
 					</wrapper>
-					<div class="smallContacts tablet-only phone-only">
+					<div class="smallContacts tablet-only">
 						<ul class="smallContacts__list">
 							<li class="smallContacts__list-item phoneItem"><a href="tel:+79117485349" class="smallContacts__list-link">+7(911)748-53-49</a></li>
 							<li class="smallContacts__list-item mailItem"><a href="mailto:doyoulikeorigami@gmail.com" class="smallContacts__list-link">DoYouLikeOrigami@gmail.com</a></li>
@@ -142,5 +144,9 @@
 		<script src="bower/jquery/jquery.min.js"></script>
 		<script src="bower/bPopup/jquery.bpopup.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="bower/bPopup/jquery.bpopup.min.js"></script>
+		<script src="bower/qtip2/jquery.qtip.min.js"></script>
+		<script src="js/add-project.js"></script>
+		<script src="js/validate.js"></script>
 	</body>
 </html>
