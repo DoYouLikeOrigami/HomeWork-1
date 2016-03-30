@@ -121,7 +121,7 @@
 
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   .tablet-only {
     display: none; }
   .large-only {
@@ -225,11 +225,13 @@
   .phoneSocials {
     margin-bottom: 0px;
     margin-top: 20px;
-    display: block; }
+    display: block;
+    margin: 20px auto 0;
+    width: 258px; }
     .phoneSocials .socials__icon {
       margin-top: 0; }
       .phoneSocials .socials__icon:first-of-type {
-        margin-left: 27px; }
+        margin-left: 0; }
   .contactBlock {
     width: 292px;
     height: auto;
